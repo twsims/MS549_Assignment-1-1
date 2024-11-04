@@ -1,9 +1,12 @@
-// function.cpp
+/*
+This is where the functions created for the application reside.  
+*/
 
-#include <iostream>
-#include "function.h"
-using namespace std;
+#include <iostream>  //using for input and output of information
+#include "function.h" //calls the header
+using namespace std;  //ease of use so I do not have to add std:: to each cout or cin line
 
+// Function for the Menu choices
 void Menu() {
     cout << "Menu:\n";
     cout << "1. Check for Odd or Even\n";
@@ -11,6 +14,8 @@ void Menu() {
     cout << "3. Exit\n";
     cout << "Please select your choice: ";
 }
+
+// Function to check if a number is odd or even anddisplays a message
 
 void CheckForOddEven() {
     int num;
@@ -25,6 +30,7 @@ void CheckForOddEven() {
     }
 }
 
+// Compares 2 numeric values to determine which one is higher, lower or equal
 void CompareTwoValues() {
     int x, y;
     cout << "Please enter two numbers to compare: ";
